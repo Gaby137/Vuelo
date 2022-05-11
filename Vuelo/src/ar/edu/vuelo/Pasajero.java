@@ -47,12 +47,15 @@ public class Pasajero {
 
 	public Boolean comprarPasaje(Vuelo vuelo, int nroAsiento) {
 		Boolean comprado = false;
-		if (vuelo.disponibilidadDeAsiento(nroAsiento)) {
-			Pasaje p = new Pasaje(100.0, vuelo.obtenerAsiento(nroAsiento));
-			this.pasaje = p;
-			vuelo.getListaDePasajeros().add(this);
-			comprado = true;
+		if (!vuelo.getListaDePasajeros().contains(this)) {
+			if (vuelo.disponibilidadDeAsiento(nroAsiento)) {
+				Pasaje p = new Pasaje(100.0, vuelo.obtenerAsiento(nroAsiento));
+				this.pasaje = p;
+				vuelo.getListaDePasajeros().add(this);
+				comprado = true;
+			}
 		}
+
 		return comprado;
 
 	}
