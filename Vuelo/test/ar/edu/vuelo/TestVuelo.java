@@ -15,6 +15,7 @@ public class TestVuelo {
 		
 		p1.comprarPasaje(v1,5);
 		
-		assertEquals(p1, v1.getAsiento(p1.getAsiento().getNro()));
+//		assertEquals(p1, v1.getAsiento(p1.getAsiento().getNro()));
+		assertEquals(1, v1.getListaDePasajeros().size());
 	}
 }
