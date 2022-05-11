@@ -32,7 +32,6 @@ public class TestVuelo {
 
 	}
 	
-	
 	@Test
 	public void QueSePuedaAsignarUnAsientoPasajeroEnUnVuelo() {
 
@@ -45,4 +44,25 @@ public class TestVuelo {
 		// comapra el asiento q tienel pasajero con la lista de asientos ()vuelo tien eobtener el asiento
 
 	}
+	
+	@Test
+	public void QueSeNOPuedaAsignarUnAsientoOCUPADOPasajeroEnUnVuelo() {
+
+		
+
+	}
+	
+	@Test
+	public void QueSeNOPuedaAsignarUnAsientoSiDespegoElVuelo() {
+
+
+	}
+	
+	@Test
+	public void ObtenerListaPasajerosQueNoVolaron () {
+
+
+	}
+	
+	
 }
