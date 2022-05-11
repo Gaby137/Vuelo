@@ -31,8 +31,7 @@ public class TestVuelo {
 		assertEquals(1, v1.getListaDePasajeros().size());
 
 	}
-	
-	
+
 	@Test
 	public void QueSePuedaAsignarUnAsientoPasajeroEnUnVuelo() {
 
@@ -42,7 +41,9 @@ public class TestVuelo {
 
 		p1.comprarPasaje(v1, 5);
 
-		// comapra el asiento q tienel pasajero con la lista de asientos ()vuelo tien eobtener el asiento
+		// comapra el asiento q tienel pasajero con la lista de asientos ()vuelo tien
+		// eobtener el asiento
 
+		assertEquals(p1.getPasaje().getAsiento(), v1.obtenerAsiento(5));
 	}
 }
